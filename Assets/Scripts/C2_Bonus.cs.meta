@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 3a4724b814a6dad47b5f03ef4e6daef2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_tankSpeed: {instanceID: 0}
+  - m_bulletSpeed: {instanceID: 0}
+  - m_shootFreq: {instanceID: 0}
+  - m_bulletPower: {instanceID: 0}
+  - m_armor: {instanceID: 0}
+  - m_radar: {instanceID: 0}
+  - m_airBag: {instanceID: 0}
+  - m_rod: {instanceID: 0}
+  - m_boat: {instanceID: 0}
+  - m_life: {fileID: 2100000, guid: 3b4f5ca4293175c4e833ead8d38e2b3e, type: 2}
+  - m_freeze: {fileID: 2100000, guid: 3b4f5ca4293175c4e833ead8d38e2b3e, type: 2}
+  - m_megaGun: {fileID: 2100000, guid: 4bb5188fe6e19214e96e5feb45e5e55a, type: 2}
+  - m_neonGun: {fileID: 2100000, guid: dad2ba705619e164f82aefaf3b5b4449, type: 2}
+  - m_mine: {fileID: 2100000, guid: 3b4f5ca4293175c4e833ead8d38e2b3e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
