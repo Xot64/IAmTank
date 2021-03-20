@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class C2_Block : C1_Actor
+public class C2_Block : AC1_Actor
 {
     public Material m_wood;
     public Material m_brick;

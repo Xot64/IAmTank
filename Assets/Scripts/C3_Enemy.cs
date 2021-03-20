@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class C3_Enemy : C2_Tank
+public class C3_Enemy : AC2_Tank
 {
     // Start is called before the first frame update
     protected override void Start()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class C2_Bullet : C1_Actor
+public class C2_Bullet : AC1_Actor
 {
     // Start is called before the first frame update
     protected override void Start()

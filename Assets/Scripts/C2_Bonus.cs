@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class C2_Bonus : C1_Actor
+public class C2_Bonus : AC1_Actor
 {
     public byte[] type;
     //Повышение характеристик
