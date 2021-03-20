@@ -4,21 +4,20 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - m_material: {fileID: 2100000, guid: 4bb5188fe6e19214e96e5feb45e5e55a, type: 2}
-  - t_texture: {fileID: 2800000, guid: e5310d60689c533468967082d44b77af, type: 3}
-  - m_bulletSpeed: {instanceID: 0}
-  - m_shootFreq: {instanceID: 0}
-  - m_bulletPower: {instanceID: 0}
-  - m_armor: {instanceID: 0}
-  - m_radar: {instanceID: 0}
-  - m_airBag: {instanceID: 0}
-  - m_rod: {instanceID: 0}
-  - m_boat: {instanceID: 0}
-  - m_life: {instanceID: 0}
-  - m_freeze: {instanceID: 0}
-  - m_megaGun: {fileID: 2100000, guid: 4bb5188fe6e19214e96e5feb45e5e55a, type: 2}
-  - m_neonGun: {instanceID: 0}
-  - m_mine: {instanceID: 0}
+  - m_tankSpeed: {fileID: 2100000, guid: 3a41d28139f4a404aa52ae06cfc71ae9, type: 2}
+  - m_bulletSpeed: {fileID: 2100000, guid: 6ae47b97b7df31044a8df71813cbdfdd, type: 2}
+  - m_shootFreq: {fileID: 2100000, guid: 6255a906f85ba7047afd19807e7d48c5, type: 2}
+  - m_bulletPower: {fileID: 2100000, guid: a338f7b98dc21944bbf49a9db8e43eb0, type: 2}
+  - m_armor: {fileID: 2100000, guid: c26edbe1cc38a014890ddaf4d33bf4c0, type: 2}
+  - m_radar: {fileID: 2100000, guid: 3218de0341aee2d4893fccd7e327d604, type: 2}
+  - m_airBag: {fileID: 2100000, guid: 5691706b02d7774418415a14f23e1497, type: 2}
+  - m_rod: {fileID: 2100000, guid: 22f7e3ab57060c140aebc469048bef0a, type: 2}
+  - m_boat: {fileID: 2100000, guid: d18adf9c55deebd4a9c27e64b418a447, type: 2}
+  - m_life: {fileID: 2100000, guid: 1dc47ae441501564e827db12e2caae36, type: 2}
+  - m_freeze: {fileID: 2100000, guid: 8b005c8621b80dc4aa28e2386a921eb0, type: 2}
+  - m_megaGun: {fileID: 2100000, guid: d1279a91dcfb7594cbafacb0b24d991d, type: 2}
+  - m_neonGun: {fileID: 2100000, guid: 5e8fc4d5c1ba3f44896f487447f150a0, type: 2}
+  - m_mine: {fileID: 2100000, guid: 1322c84ec0394324bb160247403ff660, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
