@@ -6,6 +6,7 @@ public class C2_Bonus : C1_Actor
 {
     public byte[] type;
     //Повышение характеристик
+    public Material m_material;
     public Material m_tankSpeed;     //Повышение скорости танка
     public Material m_bulletSpeed;   //Повышение скорости снаряда
     public Material m_shootFreq;     //Повышение частоты выстрелов
@@ -33,8 +34,6 @@ public class C2_Bonus : C1_Actor
     {
         base.Start();
         me = GetComponent<Transform>();
-        t = Time.time;
-        c = 0;
     }
 
     // Update is called once per frame
@@ -42,24 +41,5 @@ public class C2_Bonus : C1_Actor
     {
         base.Update();
         me.Rotate(0, 0, 0.7f);
-        if (Time.time > t + 1)
-        {
-            t = Time.time;
-            c = c == 2 ? 0 : c + 1;
-            switch (c)
-            {
-                case 0:
-                    gameObject.GetComponent<Renderer>().material = m_megaGun;
-                    break;
-                case 1:
-                    gameObject.GetComponent<Renderer>().material = m_neonGun;
-                    break;
-                case 2:
-                    gameObject.GetComponent<Renderer>().material = m_freeze;
-                    break;
-                default:
-                    break;
-            }
-        }
     }
 }
