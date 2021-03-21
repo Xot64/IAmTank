@@ -5,6 +5,9 @@ using UnityEngine;
 public class C3_Enemy : AC2_Tank
 {
     // Start is called before the first frame update
+
+    //Другое
+    public bool CanTakeBonus; //Может ли танк брать бонус
     protected override void Start()
     {
         base.Start();

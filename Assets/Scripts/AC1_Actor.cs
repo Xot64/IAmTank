@@ -8,11 +8,16 @@ public abstract class AC1_Actor : MonoBehaviour
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     public virtual void Update()
+    {
+
+    }
+
+    public virtual void OnTriggerEnter(Collider other)
     {
         
     }

@@ -6,10 +6,12 @@ public class C3_Player : AC2_Tank
 {
     public bool[] but = new bool[4];
     public byte[] dir = new byte[4];
+    
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
+       // lives = 2;
     }
 
     // Update is called once per frame
@@ -48,10 +50,7 @@ public class C3_Player : AC2_Tank
             direction = d;
             move();
         }
-        else
-        {
-            stop();
-        }
+        else stop();
     }
 
     private void redir (byte d)
@@ -60,18 +59,16 @@ public class C3_Player : AC2_Tank
         for (byte i = 0; i < 4; i++)
         {
             if (but[i])
-                if (i == d)
-                {
-                    dir[i] = 3;
-                }
-                else
-                {
-                    if (dir[i] > 0) dir[i]--;
-                }
-            else
             {
-                dir[i] = 0;
+                if (i == d) dir[i] = 3;
+                else if (dir[i] > 0) dir[i]--;
             }
+            else dir[i] = 0;
         }
+    }
+
+    public override void OnTriggerEnter(Collider other)
+    {
+        base.OnTriggerEnter(other);
     }
 }

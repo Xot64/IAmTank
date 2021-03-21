@@ -31,8 +31,7 @@ public class C2_Bonus : AC1_Actor
 
     public int type;
     private Transform me;
-    private float t;
-    private int c;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -41,8 +40,8 @@ public class C2_Bonus : AC1_Actor
         me.position = new Vector3(Random.Range(-16.0f, 16.0f), 0, Random.Range(-8.0f, 8.0f));
         int chance = Random.Range(0, 41);
         if (chance < 20) type = Mathf.FloorToInt(chance / 4);
-        else if (chance < 32) type = Mathf.FloorToInt(chance / 4);
-        else if (chance < 40) type = Mathf.FloorToInt(chance / 4);
+        else if (chance < 32) type = Mathf.FloorToInt((chance - 20) / 3) + 5;
+        else if (chance < 40) type = Mathf.FloorToInt((chance - 32) / 2) + 9;
         if (chance == 40) type = 13;
         GetComponent<Renderer>().material = m_Material[type];
         me.eulerAngles = Vector3.zero;
@@ -56,5 +55,10 @@ public class C2_Bonus : AC1_Actor
         me.Rotate(0, 0, 0.7f);
         if (Input.GetButtonDown("Fire2"))
             Destroy(gameObject);
+    }
+
+    public int getType ()
+    {
+        return type;
     }
 }
