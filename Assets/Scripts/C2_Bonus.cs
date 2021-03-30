@@ -38,6 +38,7 @@ public class C2_Bonus : AC1_Actor
         base.Start();
         me = GetComponent<Transform>();
         me.position = new Vector3(Random.Range(-16.0f, 16.0f), 0, Random.Range(-8.0f, 8.0f));
+        me.rotation = Quaternion.Euler(0,90,0);
         int chance = Random.Range(0, 41);
         if (chance < 20) type = Mathf.FloorToInt(chance / 4);
         else if (chance < 32) type = Mathf.FloorToInt((chance - 20) / 3) + 5;

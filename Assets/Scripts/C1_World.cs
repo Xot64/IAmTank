@@ -16,6 +16,6 @@ public class C1_World : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Fire1")) 
-            Instantiate(Bonus, transform.position.normalized, Quaternion.identity);
+            Instantiate(Bonus, Vector3.zero, Quaternion.identity);
     }
 }
